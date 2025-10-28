@@ -1,0 +1,1 @@
+{"version":3,"file":"main.d.ts","sourceRoot":"","sources":["../../../src/controllers/Wallet_to_account/main.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,MAAM,QAAQ,CAAC;AAQjC,wBAAsB,aAAa,CAClC,MAAM,EAAE,MAAM,EACd,MAAM,EAAE,MAAM,EACd,qBAAqB,EAAE,MAAM,EAC7B,QAAQ,CAAC,EAAE,MAAM,2CAsCjB;AAED,wBAAsB,8BAA8B,CACnD,0BAA0B,EAAE,MAAM,CAAC,eAAe,iBAelD"}

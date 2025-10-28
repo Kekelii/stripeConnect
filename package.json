@@ -1,0 +1,54 @@
+{
+	"name": "wallet",
+	"version": "1.0.0",
+	"description": "This directory holds the wallet implementation",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "NODE_ENV=development dotenvx run -f .env.development -- nodemon --exec \"node --loader ts-node/esm\" src/app.ts",
+		"dev:debug": "NODE_ENV=development dotenvx run -f .env.development -- nodemon --exec \"node --loader ts-node/esm --trace-deprecation --trace-warnings\" src/app.ts",
+		"dev:verbose": "NODE_ENV=development dotenvx run -f .env.development -- nodemon --exec \"node --loader ts-node/esm --trace-deprecation --trace-warnings --trace-uncaught\" src/app.ts",
+		"clean": "rimraf dist",
+		"stripe:listen": "stripe listen --forward-to localhost:8081/webhooks/stripe",
+		"build": "npm run clean && tsc -p .",
+		"build:trace": "npm run clean && node --trace-deprecation --loader ts-node/esm -p . && tsc -p .",
+		"start": "node --trace-deprecation dist/app.js",
+		"start:production": "NODE_ENV=production node --trace-deprecation dist/app.js",
+		"test": "NODE_ENV=test node --test --loader ts-node/esm \"tests/**/*.test.ts\"",
+		"test:watch": "NODE_ENV=test node --test --watch --loader ts-node/esm \"tests/**/*.test.ts\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Depositoo/Wallet.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Depositoo/Wallet/issues"
+	},
+	"homepage": "https://github.com/Depositoo/Wallet#readme",
+	"devDependencies": {
+		"@faker-js/faker": "^10.0.0",
+		"@types/cors": "^2.8.19",
+		"@types/express": "^5.0.3",
+		"nodemon": "^3.1.10",
+		"pino-pretty": "^13.1.1",
+		"rimraf": "^6.0.1",
+		"ts-node": "^10.9.2",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.9.2"
+	},
+	"dependencies": {
+		"@dotenvx/dotenvx": "^1.48.4",
+		"@json2csv/node": "^7.0.6",
+		"cors": "^2.8.5",
+		"dotenv": "^17.2.1",
+		"express": "^5.1.0",
+		"mongoose": "^8.17.1",
+		"nanoid": "^5.1.5",
+		"pino": "^9.9.0",
+		"pino-http": "^10.5.0",
+		"stripe": "^18.0.0"
+	}
+}

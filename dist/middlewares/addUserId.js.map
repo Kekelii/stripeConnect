@@ -1,0 +1,1 @@
+{"version":3,"file":"addUserId.js","sourceRoot":"","sources":["../../src/middlewares/addUserId.ts"],"names":[],"mappings":"AAKA,MAAM,SAAS,GAAmB,CAAC,GAAG,EAAE,GAAG,EAAE,IAAI,EAAE,EAAE;IACnD,GAAyB,CAAC,MAAM,GAAG,0BAA0B,CAAC;IAC/D,IAAI,EAAE,CAAC;AACR,CAAC,CAAC;AAEF,eAAe,SAAS,CAAC"}
