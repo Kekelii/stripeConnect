@@ -1,2 +1,2 @@
 # Wallet
-This directory holds the wallet implementation 
+This directory holds stripe Connect implementation 
