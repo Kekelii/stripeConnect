@@ -1,4 +1,4 @@
 /node_modules
 /.env.production
 /dist
-/Desposito.code-workspace
+/.Desposito.code-workspace
